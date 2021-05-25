@@ -13,8 +13,6 @@ class MainHandler(tornado.web.RequestHandler):
             **kwargs: Any
     ):
         super().__init__(application, request)
-        #self.db = db
 
     def get(self):
-        self.write('<a href="%s">link to story 1</a>' % self.reverse_url("story", "1"))
         self.write("HelloWorld")
